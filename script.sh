@@ -7,4 +7,4 @@ echo "<h1>Hello from Jenkins at $(date)</h1>" > index.html
 echo "📦 Starting Apache container..."
 docker run -d --name mysite1 -p 8081:80 -v $(pwd)/index.html:/usr/local/apache2/htdocs/index.html httpd:latest
 
-echo "✅ Website running at http://localhost:8081"
+echo "✅ Website running at http://ubuntu.example.com:8081"
