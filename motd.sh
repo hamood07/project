@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "Hello from Jenkins!"
+echo "Hello from Jenkins! latest ):"
 date
