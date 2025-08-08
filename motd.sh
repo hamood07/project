@@ -1,1 +1,4 @@
-hello jenkins
+#!/bin/bash
+
+echo "Hello from Jenkins!"
+date
