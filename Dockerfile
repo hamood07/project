@@ -1,5 +1,12 @@
 FROM ubuntu
-RUN echo " hello docker from jenkins" >index.html
-RUN apt update -y ; apt install apache2 -y
-RUN  mv index.html /var/www/html/
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+RUN apt update -y && apt install apache2 -y
+
+RUN echo "hello docker from jenkins" > /var/www/html/index.html
+
+EXPOSE 80
+
+# Ensure runtime directory exists
+RUN mkdir -p /var/run/apache2
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
