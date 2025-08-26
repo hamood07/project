@@ -11,3 +11,4 @@ echo "✅ Website running at http://192.168.1.124:8081"
 
 echo " updated"
 echo " latest version"
+echo " this is upgraded today"
