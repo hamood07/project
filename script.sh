@@ -10,3 +10,4 @@ docker run -d --name mysite1 -p 8081:80 -v $(pwd)/index.html:/usr/local/apache2/
 echo "✅ Website running at http://192.168.1.124:8081"
 
 echo " updated"
+echo " latest version"
