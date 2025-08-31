@@ -2,3 +2,4 @@
 
 echo "Hello from Jenkins! latest ):"
 date
+cal
